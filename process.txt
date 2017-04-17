@@ -1,0 +1,24 @@
+Starting the Catering Landing Page.
+After confirming I would be doing this project I began to mentally preparing myself.
+I started to get my computer in order.
+
+Started up MAMP, Created the localhost folder and necessary files. Opened the index in the browsers I would be testing in Firefox, Chrome & Chrome. Though development would be done on FireFox.
+
+Created the git repository on GitHub.com and initiated the repo locally via the terminal.
+Did the necessary steps to push the existing repo and have everything in sync on master branch.
+
+Decided to use sass css to create this project. Reasoning being my prior project was made in css and the project before that in scss so this time around it'd be sass.
+
+Created the folders and files necessary to style in sass. In terminal ran the command to preprocessing command and --watch flag.
+
+Added a reset style sheet as a partial and used the @import directive to call in in the styles.scss file. Verified it worked by viewing the styles.css file.
+
+With the original UI design behance page open I started laying out the page, first with the top section. And yes using the html5 tag <section>.
+
+Minor setback switching mindset from scss to sass.
+
+Made the colors (primary, secondary tertiary) header, paragraph and section properties in the style sheet
+
+Outlined the first sections in html
+
+Made style for a tag
