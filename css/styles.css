@@ -156,9 +156,10 @@ section {
     display: flex; }
     section:nth-of-type(5) div {
       flex: 1; }
+      section:nth-of-type(5) div h2 {
+        color: #ffffff; }
       section:nth-of-type(5) div:first-child {
-        background: url("http://placehold.it/150x150") no-repeat;
-        background-size: cover; }
+        background: url("http://placehold.it/150x150") no-repeat; }
   section:nth-of-type(6) {
     display: -webkit-box;
     display: -moz-box;
@@ -168,5 +169,13 @@ section {
     justify-content: center;
     padding: 2% 20%;
     width: 60%; }
+    section:nth-of-type(6) h2::after {
+      /*content: "testing" */
+      /*content: url("http://placehold.it/150x150") */
+      display: block;
+      content: "";
+      width: 150px;
+      height: 50px;
+      background: url("http://placehold.it/150x50") no-repeat; }
 
 /*# sourceMappingURL=styles.css.map */

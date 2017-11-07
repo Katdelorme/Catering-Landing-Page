@@ -108,12 +108,22 @@ section
     +displayflex
     div
       flex: 1
+      h2
+        color: #ffffff
       &:first-child
         background: url("http://placehold.it/150x150") no-repeat
-        background-size: cover
       &:last-child
   &:nth-of-type(6)
     +displayflex
     justify-content: center
     padding: 2% 20%
     width: 60%
+    h2
+      &::after
+        /*content: "testing"*/
+        /*content: url("http://placehold.it/150x150")*/
+        display: block
+        content: ""
+        width: 150px
+        height: 50px
+        background: url("http://placehold.it/150x50") no-repeat

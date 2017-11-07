@@ -1,6 +1,6 @@
 # Catering Landing Page
 The repository is for the landing page of a catering business.
-The site will be published at http://www.katherinedelorme.com/cateringlanding after April 21, 2017.
+The site will be published after completion.
 
 If you would like to contact someone regarding web design project or would like to hire me for work please send an email to info@katdelorme.com
 
