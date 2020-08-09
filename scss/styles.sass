@@ -29,6 +29,7 @@ h2
   color: $primary
   font-family: 'Roboto Slab', serif
   font-size: 2.0em
+  font-weight: 700
 
 h3
   color: $tertiary
@@ -44,8 +45,25 @@ h4
   text-transform: uppercase
 p
   font-family: 'Roboto', sans-serif
-  font-size: 1.1042em
+  font-size: 1em
+  line-height: 25px
+  margin: 0 0 10px 0
+
+h5
+  color: $primary
+  font-family: 'Roboto', sans-serif
+  font-size: 1em
+  font-weight: 500
   line-height: 110%
+
+ul
+    li
+      font-family: 'Roboto', sans-serif
+      font-size: 1.1042em
+      line-height: 20px
+      list-style-position: inside
+      list-style-type: disc
+      margin: 0 0 5px 15px
 
 a
   color: $secondary
@@ -58,8 +76,8 @@ a
     background: $primary
 
 img
-  height: auto
   max-width: 100%
+  height: auto
 
 .btnLarge
   background: $primary
@@ -126,42 +144,60 @@ section
     a
       margin: 2% 0 0 0
       padding: 1% 2%
+    p
+      padding: 0 25%
   &:nth-of-type(3)
     background: #f4f4f4
     +displayflex
     min-height: 30vh
-    /*div
-      flex: 1
-      &:nth-child(2), &:nth-child(5)
-        background: url("http://placehold.it/150x150") no-repeat
-        background-size: cover*/
   &:nth-of-type(4)
+    background-size: contain
     +displayflex
     flex-wrap: wrap
     justify-content: space-between
-    padding: 2% 20%
-    width: 60%
+    padding: 2% 15%
+    width: 70%
     div
       flex: 0 0 49%
       min-height: 200px
       width: 49%
     img
       border-radius: 3px
+    p, li
+      color: #aeaeae
   &:nth-of-type(5)
-    background: $secondary
     min-height: 300px
     +displayflex
     div
-      flex: 1
       h2
-        color: #ffffff
+        color: $tertiary
       &:first-child
-        background: url("http://placehold.it/150x150") no-repeat
+        background: url(../assets/bg-section-chef.jpg)
+        background-size: cover
+        background-position: center center
+        background-color: $primary
+        flex: 0 0 50%
+        width: 50%
+      &:last-child
+        background: $secondary
+        padding: 40px 0 40px 5%
+        flex: 0 0 45%
+        width: 45%
+        p
+          margin: 0 35% 20px 3%
+    .sectionDivider
+      color: $tertiary
+    p
+      color: $tertiary
+      margin: 0 0 0 20px
   &:nth-of-type(6)
+    background: url("../assets/bg-assorted-salad-on-bowls.jpg") no-repeat center center
+    background-size: cover
     +displayflex
     justify-content: center
-    padding: 2% 20%
-    width: 60%
+    min-height: 30vh
+    padding: 2% 15%
+    width: 70%
     h2
       &::after
         /*content: "testing"*/
@@ -174,4 +210,5 @@ section
 
   .sectionDivider
     color: $secondary
-    font-size: 3em
+    font-size: 2.5em
+    letter-spacing: 4px

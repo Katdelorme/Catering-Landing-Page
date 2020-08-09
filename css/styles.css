@@ -64,6 +64,7 @@ h2 {
   color: #ffa101;
   font-family: "Roboto Slab", serif;
   font-size: 2em;
+  font-weight: 700;
 }
 
 h3 {
@@ -84,8 +85,26 @@ h4 {
 
 p {
   font-family: "Roboto", sans-serif;
-  font-size: 1.1042em;
+  font-size: 1em;
+  line-height: 25px;
+  margin: 0 0 10px 0;
+}
+
+h5 {
+  color: #ffa101;
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  font-weight: 500;
   line-height: 110%;
+}
+
+ul li {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1042em;
+  line-height: 20px;
+  list-style-position: inside;
+  list-style-type: disc;
+  margin: 0 0 5px 15px;
 }
 
 a {
@@ -105,8 +124,8 @@ a:hover {
 }
 
 img {
-  height: auto;
   max-width: 100%;
+  height: auto;
 }
 
 .btnLarge {
@@ -199,6 +218,9 @@ section:nth-of-type(2) a {
   margin: 2% 0 0 0;
   padding: 1% 2%;
 }
+section:nth-of-type(2) p {
+  padding: 0 25%;
+}
 section:nth-of-type(3) {
   background: #f4f4f4;
   display: -webkit-box;
@@ -207,13 +229,9 @@ section:nth-of-type(3) {
   display: -webkit-flex;
   display: flex;
   min-height: 30vh;
-  /*div
-  * flex: 1
-  * &:nth-child(2), &:nth-child(5)
-  *  background: url("http://placehold.it/150x150") no-repeat
-  *  background-size: cover*/
 }
 section:nth-of-type(4) {
+  background-size: contain;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -221,8 +239,8 @@ section:nth-of-type(4) {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 2% 20%;
-  width: 60%;
+  padding: 2% 15%;
+  width: 70%;
 }
 section:nth-of-type(4) div {
   flex: 0 0 49%;
@@ -232,8 +250,10 @@ section:nth-of-type(4) div {
 section:nth-of-type(4) img {
   border-radius: 3px;
 }
+section:nth-of-type(4) p, section:nth-of-type(4) li {
+  color: #aeaeae;
+}
 section:nth-of-type(5) {
-  background: #00aa01;
   min-height: 300px;
   display: -webkit-box;
   display: -moz-box;
@@ -241,24 +261,45 @@ section:nth-of-type(5) {
   display: -webkit-flex;
   display: flex;
 }
-section:nth-of-type(5) div {
-  flex: 1;
-}
 section:nth-of-type(5) div h2 {
   color: #ffffff;
 }
 section:nth-of-type(5) div:first-child {
-  background: url("http://placehold.it/150x150") no-repeat;
+  background: url(../assets/bg-section-chef.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-color: #ffa101;
+  flex: 0 0 50%;
+  width: 50%;
+}
+section:nth-of-type(5) div:last-child {
+  background: #00aa01;
+  padding: 40px 0 40px 5%;
+  flex: 0 0 45%;
+  width: 45%;
+}
+section:nth-of-type(5) div:last-child p {
+  margin: 0 35% 20px 3%;
+}
+section:nth-of-type(5) .sectionDivider {
+  color: #ffffff;
+}
+section:nth-of-type(5) p {
+  color: #ffffff;
+  margin: 0 0 0 20px;
 }
 section:nth-of-type(6) {
+  background: url("../assets/bg-assorted-salad-on-bowls.jpg") no-repeat center center;
+  background-size: cover;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
   justify-content: center;
-  padding: 2% 20%;
-  width: 60%;
+  min-height: 30vh;
+  padding: 2% 15%;
+  width: 70%;
 }
 section:nth-of-type(6) h2::after {
   /*content: "testing"*/
@@ -271,7 +312,8 @@ section:nth-of-type(6) h2::after {
 }
 section .sectionDivider {
   color: #00aa01;
-  font-size: 3em;
+  font-size: 2.5em;
+  letter-spacing: 4px;
 }
 
 /*# sourceMappingURL=styles.css.map */
