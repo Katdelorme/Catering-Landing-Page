@@ -1,5 +1,10 @@
 # Protect API Key #
 ######################
+*.sass-cache
+.sass-cache
+
+# Protect API Key #
+######################
 *.env
 .env
 
