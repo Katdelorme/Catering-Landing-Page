@@ -52,6 +52,9 @@ The following was created for Katherine Delorme. It is not to be sold or reprodu
 Designed Inspiration from Aleksei Lebed
 Coded by Katherine Delorme
 
+## Acknowledgements
+Food pattern icon from [Freepik](https://www.freepik.com/free-vector/hand-drawn-food-pattern_815536.htm#page=1&query=food%20icon%20pattern&position=11?utm_source=katdelormegithub&utm_medium=github "Freepik").
+
 ## Reach Katherine Delorme
 If you would like to contact someone regarding web design project or would like to hire me for work please send an email to info@katdelorme.com
 
