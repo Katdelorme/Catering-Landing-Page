@@ -1,5 +1,5 @@
 # Catering Landing Page
-This repository is for the landing page of a catering business with description, menu, and inquiry form. The site is in Estonian.
+This repository is for the landing page of a catering business with description, menu, and inquiry form. The site is written in the Estonian language.
 
 ## Getting Started
 You can download a zip file, fork this project, or clone with HTTPS.
@@ -24,12 +24,19 @@ For information on installing sass visit [Install Sass](https://sass-lang.com/in
 ### Editing SASS
 Preprocessing - Editing SASS
 "The most direct way to make this happen is in your terminal. Once Sass is installed, you can compile your Sass to CSS using the sass command." - Sass-lang
+
 `sass input.scss output.css`
+
 `sass scss/styles.sass css/styles.css`
+
 The watch flag tells Sass to watch your source files for changes, and re-compile CSS each time you save your Sass.
+
 `sass --watch scss/styles.sass css/styles.css`
+
 You can watch and output to directories by using folder paths as your input and output, and separating them with a colon.
+
 `sass --watch app/sass:public/stylesheets`
+
 `sass --watch scss/styles.sass:css/styles.css`
 
 For additional information visit [Sass Guideline](https://sass-lang.com/guide?utm_source=katdelormegithub&utm_medium=github "Sass Guideline").
@@ -50,8 +57,7 @@ If you would like to contact someone regarding web design project or would like 
 
 Coded by Katherine Delorme
 
-Original UI design by Aleksei Lebed
-UI Design: https://www.behance.net/gallery/50638095/Catering-landing-page
+Original UI design by Aleksei Lebed: [Catering landing page](https://www.behance.net/gallery/50638095/Catering-landing-page?utm_source=katdelormegithub&utm_medium=github "Catering landing page")
 
 
                                               CODE
