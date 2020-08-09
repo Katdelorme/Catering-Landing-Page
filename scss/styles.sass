@@ -57,6 +57,10 @@ a
   &:hover
     background: $primary
 
+img
+  height: auto
+  max-width: 100%
+
 .btnLarge
   background: $primary
   border: solid $primary 1px
@@ -126,9 +130,6 @@ section
     background: #f4f4f4
     +displayflex
     min-height: 30vh
-    img
-      height: auto
-      max-width: 100%
     /*div
       flex: 1
       &:nth-child(2), &:nth-child(5)
@@ -137,16 +138,15 @@ section
   &:nth-of-type(4)
     +displayflex
     flex-wrap: wrap
+    justify-content: space-between
     padding: 2% 20%
     width: 60%
     div
-      flex: 1
-      flex-basis: 50%
+      flex: 0 0 49%
       min-height: 200px
-      /*width: 50%*/
-      &:nth-child(2), &:nth-child(3), &:nth-child(6)
-        background: url("http://placehold.it/150x150") no-repeat
-        background-size: cover
+      width: 49%
+    img
+      border-radius: 3px
   &:nth-of-type(5)
     background: $secondary
     min-height: 300px
@@ -171,3 +171,7 @@ section
         width: 150px
         height: 50px
         background: url("http://placehold.it/150x50") no-repeat
+
+  .sectionDivider
+    color: $secondary
+    font-size: 3em

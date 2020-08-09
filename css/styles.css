@@ -104,6 +104,11 @@ a:hover {
   background: #ffa101;
 }
 
+img {
+  height: auto;
+  max-width: 100%;
+}
+
 .btnLarge {
   background: #ffa101;
   border: solid #ffa101 1px;
@@ -208,10 +213,6 @@ section:nth-of-type(3) {
   *  background: url("http://placehold.it/150x150") no-repeat
   *  background-size: cover*/
 }
-section:nth-of-type(3) img {
-  height: auto;
-  max-width: 100%;
-}
 section:nth-of-type(4) {
   display: -webkit-box;
   display: -moz-box;
@@ -219,18 +220,17 @@ section:nth-of-type(4) {
   display: -webkit-flex;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   padding: 2% 20%;
   width: 60%;
 }
 section:nth-of-type(4) div {
-  flex: 1;
-  flex-basis: 50%;
+  flex: 0 0 49%;
   min-height: 200px;
-  /*width: 50%*/
+  width: 49%;
 }
-section:nth-of-type(4) div:nth-child(2), section:nth-of-type(4) div:nth-child(3), section:nth-of-type(4) div:nth-child(6) {
-  background: url("http://placehold.it/150x150") no-repeat;
-  background-size: cover;
+section:nth-of-type(4) img {
+  border-radius: 3px;
 }
 section:nth-of-type(5) {
   background: #00aa01;
@@ -268,6 +268,10 @@ section:nth-of-type(6) h2::after {
   width: 150px;
   height: 50px;
   background: url("http://placehold.it/150x50") no-repeat;
+}
+section .sectionDivider {
+  color: #00aa01;
+  font-size: 3em;
 }
 
 /*# sourceMappingURL=styles.css.map */
