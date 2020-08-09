@@ -20,57 +20,99 @@ $tertiary: #ffffff
 
 h1
   color: $tertiary
-  font-size: 2.5em
+  font-family: 'Roboto Slab', serif
+  font-size: 2.3958em
+  font-weight: 700
   text-transform: uppercase
 
 h2
   color: $primary
-  font-size: 2em
+  font-family: 'Roboto Slab', serif
+  font-size: 2.0em
 
 h3
   color: $tertiary
-  font-size: 1.5em
+  font-family: 'Roboto', sans-serif
+  font-size: 1.4792em
+  line-height: 120%
+  text-transform: uppercase
+h4
+  color: $tertiary
+  font-family: 'Roboto', sans-serif
+  font-size: 1.25em
   line-height: 120%
   text-transform: uppercase
 p
-  font-size: 1em
+  font-family: 'Roboto', sans-serif
+  font-size: 1.1042em
   line-height: 110%
 
 a
-  border: solid $secondary 1px
-  border-radius: 25px
-  color: #000000
+  color: $secondary
   display: inline-block
+  font-family: 'Roboto', sans-serif
   font-size: 1em
   +transition(ease 1s)
   text-decoration: none
   &:hover
+    background: $primary
+
+.btnLarge
+  background: $primary
+  border: solid $primary 1px
+  border-radius: 25px
+  color: #000000
+  display: inline-block
+  font-size: 0.7em
+  letter-spacing: 1px
+  +transition(ease 1s)
+  text-decoration: none
+  &:hover
     background: $secondary
+    border: solid $secondary 1px
+
+.btnSmall
+  border: solid $secondary 2px
+  border-radius: 25px
+  color: #000000
+  display: inline-block
+  font-size: 0.7em
+  letter-spacing: 1px
+  +transition(ease 1s)
+  text-decoration: none
+  &:hover
+    background: $secondary
+    border: solid $secondary 2px
 
 section
   min-height: 100px
   width: 100%
   &:first-of-type
     align-items: center
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url("../assets/header-bg.jpg") no-repeat
     background-color: #a3a1a1
     +displayflex
     flex: 1
     flex-direction: column
-    height: 70vh
+    height: 80vh
     justify-content: center
     text-align: center
+    div
+      margin: 10px 0
     img
-      margin: 6% 0
+      margin: 2% 5px
     a
       color: $tertiary
       margin: 2% 0
-      padding: 3% 2%
+      padding: 18px 25px
       text-transform: uppercase
       &:hover
         color: #ffffff
   &:nth-of-type(2)
     align-items: center
-    background-color: #f8f8f8
+    background: url("../assets/foodPattern.png") repeat
+    background-color: $tertiary
+    background-size: 400px 202.04px
     flex-direction: column
     justify-content: center
     padding: 2% 0
@@ -83,12 +125,15 @@ section
   &:nth-of-type(3)
     background: #f4f4f4
     +displayflex
-    height: 30vh
-    div
+    min-height: 30vh
+    img
+      height: auto
+      max-width: 100%
+    /*div
       flex: 1
       &:nth-child(2), &:nth-child(5)
         background: url("http://placehold.it/150x150") no-repeat
-        background-size: cover
+        background-size: cover*/
   &:nth-of-type(4)
     +displayflex
     flex-wrap: wrap
@@ -112,7 +157,6 @@ section
         color: #ffffff
       &:first-child
         background: url("http://placehold.it/150x150") no-repeat
-      &:last-child
   &:nth-of-type(6)
     +displayflex
     justify-content: center
