@@ -6,6 +6,7 @@ You can download a zip file, fork this project, or clone with HTTPS.
 
 ## Built with
 * HTML/HTML5
+* Flexbox
 * [Sass](https://sass-lang.com/?utm_source=katdelormegithub&utm_medium=github "Sass") - CSS extension language. Preprocessor scripting language that is interpreted or compiled into Cascading Style Sheets.
 
 ### Installing SASS
