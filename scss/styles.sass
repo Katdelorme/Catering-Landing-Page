@@ -23,6 +23,7 @@ h1
   font-family: 'Roboto Slab', serif
   font-size: 2.3958em
   font-weight: 700
+  margin: 0 0 5% 0
   text-transform: uppercase
 
 h2
@@ -55,6 +56,11 @@ h5
   font-size: 1em
   font-weight: 500
   line-height: 110%
+h6
+  color: $tertiary
+  font-family: 'Roboto', sans-serif
+  font-size: 0.9em
+  font-weight: 500
 
 ul
     li
@@ -78,6 +84,9 @@ a
 img
   max-width: 100%
   height: auto
+
+i
+  color: $primary
 
 .btnLarge
   background: $primary
@@ -146,6 +155,8 @@ section
       padding: 1% 2%
     p
       padding: 0 25%
+    h2
+      margin: 0 0 3% 0
   &:nth-of-type(3)
     background: #f4f4f4
     +displayflex
@@ -191,24 +202,120 @@ section
       color: $tertiary
       margin: 0 0 0 20px
   &:nth-of-type(6)
-    background: url("../assets/bg-assorted-salad-on-bowls.jpg") no-repeat center center
+    align-items: center
+    background: url("../assets/bg-assorted-salad-on-bowls.jpg") no-repeat center bottom
     background-size: cover
     +displayflex
+    flex-direction: column
     justify-content: center
     min-height: 30vh
-    padding: 2% 15%
+    /*padding: 5% 15% 15% 15%*/
+    padding: 5% 15%
     width: 70%
-    h2
+    p
+      color: #979797
+      margin: 0 20%
+      text-align: center
+    /*h2
       &::after
-        /*content: "testing"*/
-        /*content: url("http://placehold.it/150x150")*/
         display: block
         content: ""
         width: 150px
         height: 50px
-        background: url("http://placehold.it/150x50") no-repeat
+        background: url("http://placehold.it/150x50") no-repeat*/
 
   .sectionDivider
     color: $secondary
     font-size: 2.5em
     letter-spacing: 4px
+
+  form
+    justify-content: space-between
+    padding: 3% 20% 0 20%
+
+    input[type="text"], input[type="email"]
+      background-color: #eaeaea
+      border: 2px solid #d5d5d5
+      border-radius: 3px
+      box-sizing: border-box
+      color: #c6c6c6
+      font-family: "Roboto", Helvetica, Arial, sans-serif
+      font-size: 1em
+      height: 40px
+      line-height: normal
+      margin: 0 0 2% 0
+      text-indent: 2%
+      width: 49%
+
+    input[type="text"]:active, input[type="email"]:active, input[type="text"]:focus, input[type="email"]:focus
+      background-color: #ffffff
+      border: 2px solid $primary
+      outline: none
+
+    textarea
+      background-color: #eaeaea
+      border: 2px solid #d5d5d5
+      border-radius: 3px
+      box-sizing: border-box
+      color: #c6c6c6
+      line-height: normal
+      font-family: "Roboto", Helvetica, Arial, sans-serif
+      font-size: 1em
+      margin: 0 0 1% 0
+      padding: 1%
+      text-indent: 1%
+      width: 100%
+
+    textarea:active, textarea:focus
+      background-color: #ffffff
+      border: 2px solid $primary
+      outline: none
+
+    input[type="submit"]
+      background-color: $primary
+      border: $primary
+      border-radius: 3px
+      color: #ffffff
+      font-family: "Roboto", Helvetica, Arial, sans-serif
+      font-size: 1em
+      text-transform: uppercase
+      height: 40px
+      margin: 0 0 1% 0
+      padding: 2% 5%
+      width: 100%
+
+    input[type="submit"]:hover, input[type="submit"]:active , input[type="submit"]:focus
+      background-color: $secondary
+      border: $primary
+      cursor: pointer
+
+    input[type="submit"]:visited
+      cursor: pointer
+      background-color: #000000
+
+footer
+  align-items: center
+  background-color: #000000
+  +displayflex
+  flex-direction: column
+  justify-content: center
+  padding: 20px 0
+
+  #businessInfo
+    +displayflex
+    justify-content: space-between
+    width: 60%
+    div
+      align-items: center
+      +displayflex
+      i
+        margin-right: 5px
+  #credit
+    align-items: center
+    background: $tertiary
+    +displayflex
+    margin: 20px 0 0 0
+    justify-content: center
+    width: 100%
+    p
+      margin: 0

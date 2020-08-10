@@ -39,24 +39,17 @@
 <body>
   <section>
     <h1>Bouche Catering</h1>
-    <div>
+    <!--<div>
       <img src="http://placehold.it/180x70" alt="" />
       <img src="http://placehold.it/180x70" alt="" />
       <img src="http://placehold.it/180x70" alt="" />
-    </div>
+    </div>-->
     <h4>Kas vajate toitlustuse korraldamisel?<br/>Pole Uritust, mille tooitlustamisega me hakkama el saaks!</h4>
     <a href="#" class="btnLarge" target="_blank">Tellimmiseks Vajuta Siia</a>
   </section>
 
   <section>
     <h2>Esmaklassiline catering just Teile!</h2>
-    <img src="http://placehold.it/250x70" alt="" />
-    <!--<p>Tere tulemast Bouche Cafe&amp;Catering kodulehele!
-    <br>kulinaaria on meie king ja meil on hea meel jagada oma ideid ja kogemusi Teieja ja tuua kulinaarsed imed Teis
-    <br>unituse toidulauade.
-    <br>Meil on piisawalt kogemusi Teis banketi, stiilipeo, lapse sunnipaeve voi mone muu ettevotmise laitmatuks
-    <br>korraldamiseks ja teenindamiseks selle algusest lopuni.
-    <br>Aanmiselt paindlik toosusteem voimaldab meil laheneda igale kliendile individuaalselt ja rehuldada kaik tema soovid.</p>-->
     <p>Tere tulemast Bouche Cafe&amp;Catering kodulehele! Kulinaaria on meie king ja meil on hea meel jagada oma ideid ja kogemusi Teieja ja tuua kulinaarsed imed Teis unituse toidulauade. Meil on piisawalt kogemusi Teis banketi, stiilipeo, lapse sunnipaeve voi mone muu ettevotmise laitmatuks korraldamiseks ja teenindamiseks selle algusest lopuni. Aanmiselt paindlik toosusteem voimaldab meil laheneda igale kliendile individuaalselt ja rehuldada kaik tema soovid.</p>
     <a href="#" target="_blank" class="btnSmall">Meie Teenused</a>
   </section>
@@ -143,18 +136,42 @@
 
   <section>
     <h2>Saatke meile tellimus Catering</h2>
-  </section>
-
-  <section>
+    <span class="sectionDivider">••••••</span>
+    <p>Loodame vaga, et Bouche Cafe&Catering meeskonnast saab Tele Urituste korraldamisel usaldusvaarne partner. Votke melega uhendust jargmistel kontaktandmetel:</p>
+    <form name="hgmailer" action="" method="post">
+      <input type="hidden" name="recipient" value="info@katdelorme.com">
+        <input type="text" name="lastname" size="40" placeholder="Nimi">
+        <input type="text" name="firstname" size="40" placeholder="Firma nimi">
+        <input type="text" name="phone" size="40" placeholder="Telefon">
+        <input type="text" name="email" size="40" placeholder="Email">
+        <textarea rows="5" cols="30" name="message" placeholder="Tellimuse info"></textarea>
+        <br>
+        <input type="submit" value="Saada" id="contactsubmit" name="submit" onclick="hgsubmit();">
+        <input type="hidden" name="redirect" value="">
+    </form>
   </section>
 
   <footer>
-    <a href="https://www.facebook.com/KatdelormeKatdesign/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-    <a href="#" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-    <a href="https://twitter.com/Katdelorme" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-    <a href="#" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-    <a href="https://dribbble.com/KatherineDelorme" target="_blank"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
-    <p>Site mockup by <a href="https://www.behance.net/gallery/50638095/Catering-landing-page" target="_blank">Aleksei Lebed</a> Coded with &hearts; by <a href="https://github.com/Katdelorme/" target="_blank">Katherine Delorme</a></p>
+    <div id="businessInfo">
+      <div>
+        <i class="fa fa-map-marker" aria-hidden="true"></i>
+        <h6>Tondiraba Jaahall, Varraku 14, 13917 Tallinn</h6>
+      </div>
+      <div>
+        <i class="fa fa-phone" aria-hidden="true"></i>
+        <h6>+(372) 600 8583</h6>
+      </div>
+      <div>
+        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+        <h6>Catering@bouchee.ee</h6>
+      </div>
+    </div>
+    <!--<div id="credit">
+      <a href="https://www.facebook.com/KatdelormeKatdesign/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+      <a href="https://twitter.com/Katdelorme" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+      <a href="https://dribbble.com/KatherineDelorme" target="_blank"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+      <p>Site mockup by <a href="https://www.behance.net/gallery/50638095/Catering-landing-page" target="_blank">Aleksei Lebed</a> Coded with &hearts; by <a href="https://github.com/Katdelorme/" target="_blank">Katherine Delorme</a></p>
+    </div>-->
   </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js.js"></script>

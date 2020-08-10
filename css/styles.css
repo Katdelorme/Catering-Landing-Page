@@ -57,6 +57,7 @@ h1 {
   font-family: "Roboto Slab", serif;
   font-size: 2.3958em;
   font-weight: 700;
+  margin: 0 0 5% 0;
   text-transform: uppercase;
 }
 
@@ -98,6 +99,13 @@ h5 {
   line-height: 110%;
 }
 
+h6 {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
 ul li {
   font-family: "Roboto", sans-serif;
   font-size: 1.1042em;
@@ -126,6 +134,10 @@ a:hover {
 img {
   max-width: 100%;
   height: auto;
+}
+
+i {
+  color: #ffa101;
 }
 
 .btnLarge {
@@ -221,6 +233,9 @@ section:nth-of-type(2) a {
 section:nth-of-type(2) p {
   padding: 0 25%;
 }
+section:nth-of-type(2) h2 {
+  margin: 0 0 3% 0;
+}
 section:nth-of-type(3) {
   background: #f4f4f4;
   display: -webkit-box;
@@ -289,31 +304,149 @@ section:nth-of-type(5) p {
   margin: 0 0 0 20px;
 }
 section:nth-of-type(6) {
-  background: url("../assets/bg-assorted-salad-on-bowls.jpg") no-repeat center center;
+  align-items: center;
+  background: url("../assets/bg-assorted-salad-on-bowls.jpg") no-repeat center bottom;
   background-size: cover;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   min-height: 30vh;
-  padding: 2% 15%;
+  /*padding: 5% 15% 15% 15%*/
+  padding: 5% 15%;
   width: 70%;
+  /*h2
+  * &::after
+  *  display: block
+  *  content: ""
+  *  width: 150px
+  *  height: 50px
+  *  background: url("http://placehold.it/150x50") no-repeat*/
 }
-section:nth-of-type(6) h2::after {
-  /*content: "testing"*/
-  /*content: url("http://placehold.it/150x150")*/
-  display: block;
-  content: "";
-  width: 150px;
-  height: 50px;
-  background: url("http://placehold.it/150x50") no-repeat;
+section:nth-of-type(6) p {
+  color: #979797;
+  margin: 0 20%;
+  text-align: center;
 }
 section .sectionDivider {
   color: #00aa01;
   font-size: 2.5em;
   letter-spacing: 4px;
+}
+section form {
+  justify-content: space-between;
+  padding: 3% 20% 0 20%;
+}
+section form input[type=text], section form input[type=email] {
+  background-color: #eaeaea;
+  border: 2px solid #d5d5d5;
+  border-radius: 3px;
+  box-sizing: border-box;
+  color: #c6c6c6;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  height: 40px;
+  line-height: normal;
+  margin: 0 0 2% 0;
+  text-indent: 2%;
+  width: 49%;
+}
+section form input[type=text]:active, section form input[type=email]:active, section form input[type=text]:focus, section form input[type=email]:focus {
+  background-color: #ffffff;
+  border: 2px solid #ffa101;
+  outline: none;
+}
+section form textarea {
+  background-color: #eaeaea;
+  border: 2px solid #d5d5d5;
+  border-radius: 3px;
+  box-sizing: border-box;
+  color: #c6c6c6;
+  line-height: normal;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  margin: 0 0 1% 0;
+  padding: 1%;
+  text-indent: 1%;
+  width: 100%;
+}
+section form textarea:active, section form textarea:focus {
+  background-color: #ffffff;
+  border: 2px solid #ffa101;
+  outline: none;
+}
+section form input[type=submit] {
+  background-color: #ffa101;
+  border: #ffa101;
+  border-radius: 3px;
+  color: #ffffff;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  text-transform: uppercase;
+  height: 40px;
+  margin: 0 0 1% 0;
+  padding: 2% 5%;
+  width: 100%;
+}
+section form input[type=submit]:hover, section form input[type=submit]:active, section form input[type=submit]:focus {
+  background-color: #00aa01;
+  border: #ffa101;
+  cursor: pointer;
+}
+section form input[type=submit]:visited {
+  cursor: pointer;
+  background-color: #000000;
+}
+
+footer {
+  align-items: center;
+  background-color: #000000;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 0;
+}
+footer #businessInfo {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+footer #businessInfo div {
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+footer #businessInfo div i {
+  margin-right: 5px;
+}
+footer #credit {
+  align-items: center;
+  background: #ffffff;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  margin: 20px 0 0 0;
+  justify-content: center;
+  width: 100%;
+}
+footer #credit p {
+  margin: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */
