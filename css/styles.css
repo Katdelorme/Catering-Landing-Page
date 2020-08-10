@@ -127,8 +127,11 @@ a {
   transition: ease 1s;
   text-decoration: none;
 }
-a:hover {
+a:hover, a:active, a:focus {
   background: #ffa101;
+}
+a:visited {
+  color: #00aa01;
 }
 
 img {
@@ -174,9 +177,13 @@ i {
   transition: ease 1s;
   text-decoration: none;
 }
-.btnSmall:hover {
+.btnSmall:hover, .btnSmall:active, .btnSmall:focus {
   background: #00aa01;
   border: solid #00aa01 2px;
+  outline-color: #ffffff;
+}
+.btnSmall:visited {
+  color: #000000;
 }
 
 section {
@@ -186,7 +193,7 @@ section {
 section:first-of-type {
   align-items: center;
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url("../assets/header-bg.jpg") no-repeat;
-  background-color: #a3a1a1;
+  background-color: #00aa01;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -243,7 +250,7 @@ section:nth-of-type(3) {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  min-height: 30vh;
+  min-height: 10vh;
 }
 section:nth-of-type(4) {
   background-size: contain;
@@ -267,6 +274,9 @@ section:nth-of-type(4) img {
 }
 section:nth-of-type(4) p, section:nth-of-type(4) li {
   color: #aeaeae;
+}
+section:nth-of-type(4) ul {
+  margin: 0 0 15px 0;
 }
 section:nth-of-type(5) {
   min-height: 300px;
@@ -305,7 +315,7 @@ section:nth-of-type(5) p {
 }
 section:nth-of-type(6) {
   align-items: center;
-  background: url("../assets/bg-assorted-salad-on-bowls.jpg") no-repeat center bottom;
+  background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2)), url("../assets/bg-assorted-salad-on-bowls.jpg") no-repeat center bottom;
   background-size: cover;
   display: -webkit-box;
   display: -moz-box;
@@ -315,16 +325,8 @@ section:nth-of-type(6) {
   flex-direction: column;
   justify-content: center;
   min-height: 30vh;
-  /*padding: 5% 15% 15% 15%*/
   padding: 5% 15%;
   width: 70%;
-  /*h2
-  * &::after
-  *  display: block
-  *  content: ""
-  *  width: 150px
-  *  height: 50px
-  *  background: url("http://placehold.it/150x50") no-repeat*/
 }
 section:nth-of-type(6) p {
   color: #979797;
@@ -447,6 +449,130 @@ footer #credit {
 }
 footer #credit p {
   margin: 0;
+}
+
+/*Medium devices (tablets, 768px and below)*/
+@media (max-width: 768px) {
+  section:first-of-type a {
+    margin: 5% 0;
+  }
+  section:nth-of-type(2) {
+    padding: 5% 0;
+  }
+  section:nth-of-type(2) p {
+    padding: 0 10%;
+  }
+  section:nth-of-type(4) {
+    padding: 2% 10%;
+    width: 80%;
+  }
+  section:nth-of-type(6) {
+    background-size: auto;
+  }
+
+  footer #businessInfo {
+    width: 80%;
+  }
+  footer #businessInfo div {
+    margin: 10px 0;
+  }
+}
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+  .btnSmall {
+    font-size: 1em;
+  }
+
+  section:first-of-type {
+    background-size: cover;
+  }
+  section:first-of-type h4 {
+    padding: 0 10%;
+  }
+  section:first-of-type a {
+    margin: 10% 0;
+  }
+  section:nth-of-type(2) {
+    padding: 8% 0;
+  }
+  section:nth-of-type(2) p {
+    padding: 0 15%;
+  }
+  section:nth-of-type(2) a {
+    padding: 3% 5%;
+  }
+  section:nth-of-type(3) {
+    flex-wrap: wrap;
+  }
+  section:nth-of-type(3) div {
+    flex: 0 0 50%;
+    width: 50%;
+  }
+  section:nth-of-type(4) {
+    padding: 8% 10%;
+  }
+  section:nth-of-type(4) div {
+    flex: 0 0 100%;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  section:nth-of-type(4) div:nth-of-type(1) {
+    order: 1;
+  }
+  section:nth-of-type(4) div:nth-of-type(2) {
+    order: 2;
+  }
+  section:nth-of-type(4) div:nth-of-type(3) {
+    order: 4;
+  }
+  section:nth-of-type(4) div:nth-of-type(4) {
+    order: 3;
+  }
+  section:nth-of-type(4) div:nth-of-type(5) {
+    order: 5;
+  }
+  section:nth-of-type(4) div:nth-of-type(6) {
+    order: 6;
+  }
+  section:nth-of-type(5) {
+    flex-wrap: wrap;
+  }
+  section:nth-of-type(5) div:first-child {
+    flex: 0 0 100%;
+    min-height: 50vh;
+    width: 100%;
+  }
+  section:nth-of-type(5) div:last-child {
+    padding: 40px 0 40px 10%;
+    flex: 0 0 90%;
+    width: 90%;
+  }
+  section:nth-of-type(5) div:last-child p {
+    margin: 0 10% 20px 3%;
+  }
+  section:nth-of-type(6) {
+    background-size: cover;
+  }
+  section:nth-of-type(6) h2 {
+    text-align: center;
+  }
+  section:nth-of-type(6) p {
+    margin: 0;
+  }
+  section form {
+    padding: 5% 5% 0 5%;
+  }
+  section form input[type=text], section form input[type=email] {
+    margin: 0 0 10px 0;
+    width: 100%;
+  }
+  section form textarea {
+    margin: 0 0 10px 0;
+  }
+
+  footer #businessInfo {
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

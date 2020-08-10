@@ -78,8 +78,10 @@ a
   font-size: 1em
   +transition(ease 1s)
   text-decoration: none
-  &:hover
+  &:hover, &:active, &:focus
     background: $primary
+  &:visited
+    color: $secondary
 
 img
   max-width: 100%
@@ -111,9 +113,12 @@ i
   letter-spacing: 1px
   +transition(ease 1s)
   text-decoration: none
-  &:hover
+  &:hover, &:active, &:focus
     background: $secondary
     border: solid $secondary 2px
+    outline-color: $tertiary
+  &:visited
+    color: #000000
 
 section
   min-height: 100px
@@ -121,7 +126,7 @@ section
   &:first-of-type
     align-items: center
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url("../assets/header-bg.jpg") no-repeat
-    background-color: #a3a1a1
+    background-color: $secondary
     +displayflex
     flex: 1
     flex-direction: column
@@ -160,7 +165,7 @@ section
   &:nth-of-type(3)
     background: #f4f4f4
     +displayflex
-    min-height: 30vh
+    min-height: 10vh
   &:nth-of-type(4)
     background-size: contain
     +displayflex
@@ -176,6 +181,8 @@ section
       border-radius: 3px
     p, li
       color: #aeaeae
+    ul
+      margin: 0 0 15px 0
   &:nth-of-type(5)
     min-height: 300px
     +displayflex
@@ -203,26 +210,18 @@ section
       margin: 0 0 0 20px
   &:nth-of-type(6)
     align-items: center
-    background: url("../assets/bg-assorted-salad-on-bowls.jpg") no-repeat center bottom
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2)), url("../assets/bg-assorted-salad-on-bowls.jpg") no-repeat center bottom
     background-size: cover
     +displayflex
     flex-direction: column
     justify-content: center
     min-height: 30vh
-    /*padding: 5% 15% 15% 15%*/
     padding: 5% 15%
     width: 70%
     p
       color: #979797
       margin: 0 20%
       text-align: center
-    /*h2
-      &::after
-        display: block
-        content: ""
-        width: 150px
-        height: 50px
-        background: url("http://placehold.it/150x50") no-repeat*/
 
   .sectionDivider
     color: $secondary
@@ -319,3 +318,97 @@ footer
     width: 100%
     p
       margin: 0
+
+/*Medium devices (tablets, 768px and below)*/
+@media (max-width: 768px)
+  section
+    &:first-of-type
+      a
+        margin: 5% 0
+    &:nth-of-type(2)
+      padding: 5% 0
+      p
+        padding: 0 10%
+    &:nth-of-type(4)
+      padding: 2% 10%
+      width: 80%
+    &:nth-of-type(6)
+      background-size: auto
+  footer
+    #businessInfo
+      width: 80%
+      div
+        margin: 10px 0
+
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px)
+  .btnSmall
+    font-size: 1em
+  section
+    &:first-of-type
+      background-size: cover
+      h4
+        padding: 0 10%
+      a
+        margin: 10% 0
+    &:nth-of-type(2)
+      padding: 8% 0
+      p
+        padding: 0 15%
+      a
+        padding: 3% 5%
+    &:nth-of-type(3)
+      flex-wrap: wrap
+      div
+        flex: 0 0 50%
+        width: 50%
+    &:nth-of-type(4)
+      padding: 8% 10%
+      div
+        flex: 0 0 100%
+        margin-bottom: 20px
+        width: 100%
+        &:nth-of-type(1)
+          order: 1
+        &:nth-of-type(2)
+          order: 2
+        &:nth-of-type(3)
+          order: 4
+        &:nth-of-type(4)
+          order: 3
+        &:nth-of-type(5)
+          order: 5
+        &:nth-of-type(6)
+          order: 6
+    &:nth-of-type(5)
+      flex-wrap: wrap
+      div
+        &:first-child
+          flex: 0 0 100%
+          min-height: 50vh
+          width: 100%
+        &:last-child
+          padding: 40px 0 40px 10%
+          flex: 0 0 90%
+          width: 90%
+          p
+            margin: 0 10% 20px 3%
+    &:nth-of-type(6)
+      background-size: cover
+      h2
+        text-align: center
+      p
+        margin: 0
+    form
+      padding: 5% 5% 0 5%
+      input[type="text"], input[type="email"]
+        margin: 0 0 10px 0
+        width: 100%
+      textarea
+        margin: 0 0 10px 0
+  footer
+    #businessInfo
+      flex-direction: column
+
+@media (max-width: 365px)
