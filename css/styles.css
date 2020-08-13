@@ -484,6 +484,7 @@ footer #credit p {
   }
 
   section:first-of-type {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url("../assets/header-bg.jpg") no-repeat;
     background-size: cover;
   }
   section:first-of-type h4 {
