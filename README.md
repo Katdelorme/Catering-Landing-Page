@@ -1,5 +1,10 @@
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)]
+
 # Catering Landing Page
 This repository is for the landing page of a catering business with description, menu, and inquiry form. The site is written in the Estonian language. View the completed page [online](http://katherinedelorme.com/cateringlandingpage/index.html?utm_source=katdelormegithub&utm_medium=github "online").
+
+![alt text](https://static.dribbble.com/users/633772/screenshots/14023048/media/33da51d40423674fb3795006bc32ea20.png =50% "Introduction to catering service")
+![alt text](https://static.dribbble.com/users/633772/screenshots/14023048/media/33da51d40423674fb3795006bc32ea20.png =200 "Catering option and service")
 
 ## Getting Started
 You can download a zip file, fork this project, or clone with HTTPS.
@@ -41,6 +46,9 @@ You can watch and output to directories by using folder paths as your input and 
 `sass --watch scss/styles.sass:css/styles.css`
 
 For additional information visit [Sass Guideline](https://sass-lang.com/guide?utm_source=katdelormegithub&utm_medium=github "Sass Guideline").
+
+## Demo: Responsive
+![Responsive mobile version](https://static.dribbble.com/users/633772/screenshots/14034448/media/70432812058c451e107aea75b366cb23.png "Responsive mobile version")
 
 ## Author
 * Katherine Delorme - *[katherinedelorme.com](http://katherinedelorme.com?utm_source=github&utm_medium=repo&utm_campaign=catering_landing_page_readme "Portfolio Website")*
