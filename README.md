@@ -3,7 +3,7 @@
 # Catering Landing Page
 This repository is for the landing page of a catering business with description, menu, and inquiry form. The site is written in the Estonian language. **View the completed page [online](http://katherinedelorme.com/cateringlandingpage/index.html?utm_source=katdelormegithub&utm_medium=github "online")**.
 
-![Catering option and service](https://static.dribbble.com/users/633772/screenshots/14023048/media/33da51d40423674fb3795006bc32ea20.png "Catering option and service")
+![Catering options and service](https://static.dribbble.com/users/633772/screenshots/14023048/media/33da51d40423674fb3795006bc32ea20.png "Catering options and service")
 
 ## Getting Started
 You can download a zip file, fork this project, or clone with HTTPS.
