@@ -1,4 +1,4 @@
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)]
+![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)
 
 # Catering Landing Page
 This repository is for the landing page of a catering business with description, menu, and inquiry form. The site is written in the Estonian language. **View the completed page [online](http://katherinedelorme.com/cateringlandingpage/index.html?utm_source=katdelormegithub&utm_medium=github "online")**.
